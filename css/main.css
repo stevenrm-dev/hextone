@@ -1,0 +1,139 @@
+@import url(./settings/normalize.css);
+
+body {
+    background-color: #009483;
+    overflow-y: hidden;
+}
+
+body * {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.header {
+    background-color: #000;
+    padding: 2em 0;
+    border-bottom: 1px solid;
+    transition: 1s ease-in-out;
+}
+
+.header--contrast {
+    border-bottom-color: #fff;
+}
+
+.title {
+    font-size: calc(1em + 1vw);
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
+.main {
+    background-color: #fff;
+    width: 65vw;
+    max-width: 350px;
+    margin: 8% auto;
+    padding: .8em .8em 2em .8em;
+    border-radius: .3em;
+}
+
+.main--contrast {
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+}
+
+.container__picker {
+    position: relative;
+}
+
+.picker {
+    width: 100%;
+    height: 50vh;
+    max-height: 250px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.picker--contrast {
+    border: 2px solid #f5f5f5;
+    transition: .5s ease-in-out;
+}
+
+.picker::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.picker::-webkit-color-swatch {
+    border: none;
+}
+
+.text__cta {
+    width: 50%;
+    max-width: 80px;
+    font-size: calc(.9em + 1vw);
+    line-height: .95;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #009483;
+    filter: brightness(.8);
+    position: absolute;
+    bottom: 7%;
+    left: 5%;
+}
+
+.text__cta .icon {
+    font-size: calc(.5em + 1vw);
+}
+
+.container__content {
+    margin: 0 auto;
+    padding: 5%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: start;
+    gap: .5rem;
+}
+
+.title__claim {
+    font-size: calc(1.4em + 1vw);
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.title__claim .icon {
+    font-size: .5em;
+    position: absolute;
+    top: 10%;
+}
+
+.output {
+    font-size: calc(1.2em + 1vw);
+    text-transform: uppercase;
+    transition: .5s ease-in-out;
+}
+
+.btn {
+    font-size: calc(.2em + 1vw);
+    font-weight: 600;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: .15rem;
+    margin-top: 3rem;
+    padding: 1rem 2.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn--done {
+    color: #3e853e;
+}
